@@ -1,0 +1,83 @@
+/* ================================================
+  Boock
+================================================ */
+.FormGroup {
+  position: relative;
+  line-height: 1.2;
+  padding: 0 10px;
+  font-size: 12px;
+  border: none;
+}
+
+.FormGroup + .FormGroup {
+  padding-top: 10px;
+}
+
+/* ================================================
+  Elements
+================================================ */
+.FormGroup__stateName {
+  color: black;
+  font-size: 9px;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.FormGroup__userText {
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  border-bottom: 0;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+.FormGroup__label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+.FormGroup__errors {
+  border-bottom: 1px solid rgba(255, 70, 120, 0.5);
+}
+.FormGroup__error {
+  background-color: rgba(255, 70, 120, 0.2);
+  border-top: 1px solid rgba(255, 70, 120, 0.5);
+  padding: 5px;
+}
+.FormGroup__success {
+  background-color: rgba(70, 255, 120, 0.2);
+  border-top: 1px solid rgba(70, 255, 120, 0.5);
+  border-bottom: 1px solid rgba(70, 255, 120, 0.5);
+  padding: 5px;
+}
+
+/* ================================================
+  Modifiers
+================================================ */
+
+.FormGroup--is-errored {
+  
+}
+.FormGroup--is-errored .FormGroup__userText {
+  border-color: rgba(255, 70, 120, 0.5);
+  background-color: rgba(255, 70, 120, 0.1);
+}
+
+.FormGroup--is-errored .FormGroup__error {
+}
+
+.FormGroup--is-success {
+  
+}
+.FormGroup--is-success .FormGroup__userText {
+  border-color: rgba(70, 255, 120, 0.5);
+  background-color: rgba(70, 255, 120, 0.1);
+}
+.FormGroup--is-success .FormGroup__label {
+
+}
+.FormGroup--is-success .FormGroup__success {
+  
+}
