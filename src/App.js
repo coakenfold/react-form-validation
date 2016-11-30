@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import Login from './Login';
-import FormGroup from './FormGroup';
+import Login from './Components/Login';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Login>
-        <FormGroup />
-      </Login>
+      <Login />
     );
   }
 }

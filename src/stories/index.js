@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import '../index.css';
 
-import FormGroupStates from '../FormGroupStates'
-import FormGroup from '../FormGroup';
+import FormGroupStates from '../Data/FormGroupStates'
+import FormGroup from '../Components/FormGroup';
 
 const constrained = {
   width: '200px',
