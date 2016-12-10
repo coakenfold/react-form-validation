@@ -93,19 +93,18 @@ class Login extends React.Component {
       button = <button disabled type='submit' className='Login__submit'>Submit</button>
     }
     return (
-      <div>
+      <div className='Login__container'>
         <h1>Login</h1>
-        <p>Type "error" to trigger validation messages</p>
+        <p className="Login__note">Type "error" to trigger validation messages</p>
         <form className={'Login '} autoComplete="off">
           <fieldset className={'Login__form-group '}>
             <label>
-              <span className="Login__label">Name</span>
               <input id="Login__name" 
                   className="Login__name" 
                   type="text" 
-                  placeholder="Type" 
                   value={ nameValue }
                   onChange={ this.handleChangeName } />
+              <span className="Login__label">Name</span>
             </label>
 
             { nameError &&
@@ -117,12 +116,12 @@ class Login extends React.Component {
 
           <fieldset className={'Login__form-group '}>
             <label>
-              <span className="Login__label">Password</span>
               <input id="Login__password" 
                   className="Login__password" 
                   type="password" 
                   value={ passwordValue }
                   onChange={ this.handleChangePassword } />
+              <span className="Login__label">Password</span>
             </label>
 
             { passwordError &&
