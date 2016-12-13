@@ -86,12 +86,14 @@ class Login extends React.Component {
     const formError = this.formError({nameError, passwordError})
     const formSuccess = this.formSuccess({nameValue, nameError, passwordValue, passwordError})
     const formValid = this.formValid({nameValue, nameError, passwordValue, passwordError})
+    
     let button = null;
     if (formValid) {
       button = <button type='submit' className='Login__submit'>Submit</button>
     } else {
       button = <button disabled type='submit' className='Login__submit'>Submit</button>
     }
+    
     return (
       <div className='Login__container'>
         <h1>Login</h1>

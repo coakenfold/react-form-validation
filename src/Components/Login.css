@@ -11,85 +11,107 @@
   Elements
 ================================================ */
 .Login__container {
+  margin: 0 auto;
   max-width: 80%;
   text-align: center;
-  margin: 0 auto;
 }
 
 .Login__form-group {
   border: none;
+  margin: 40px auto 40px;
   padding: 0;
-  margin: 30px auto;
 }
 .Login__form-group label {
-  position: relative;
   display: block;
+  position: relative;
+  margin-top: 5px;
 }
+
+.Login__error {
+  padding: 5px;
+}
+
+.Login__error-field {
+  color: red;
+  font-size: 14px;
+}
+
+.Login__error-form {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 .Login input[value=""] ~ .Login__label{
   bottom: 0;
 }
+
 .Login input[type='text'],
 .Login input[type='password']  {
-  padding: 10px 5px;
-  margin: 0;
-    width: 100%;
-    text-align:center;
-    border: 0px solid black;
-    border-top: 1px solid rgba(0,0,0, 0.01);
-    border-left: 1px solid rgba(0,0,0, 0.01);
-    border-bottom: 1px solid rgba(0,0,0, 0.8);
-    background-color: rgba(255,255,255,0.1);
-  position: relative;
-  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
   background-color:rgba(255,255,255, 1);
+  border: 0px solid black;
+  border-bottom: 1px solid rgba(0,0,0, 0.8);
+  border-left: 1px solid rgba(0,0,0, 0.01);
+  border-top: 1px solid rgba(0,0,0, 0.01);
+  margin: 0;
+  padding: 10px 5px;
+  position: relative;
+  text-align:center;
   transition: background-color 300ms;
+  width: 100%;
+  z-index: 1;
 }
+
 .Login input[value=""] {
   background-color: rgba(255,255,255, 0);
 }
+
 .Login input[type='text']:focus,
 .Login input[type='password']:focus {
  background-color: rgba(255,255,255,1);
 }
+
 .Login input[type='text']:focus ~ .Login__label,
 .Login input[type='password']:focus ~ .Login__label {
   bottom: 40px;
 }
+
 .Login__label {
-  position: absolute;
   bottom: 40px;
+  padding: 10px 5px;
+  position: absolute;
+  transition: bottom 300ms;
   width: 100%;
   z-index: 0;
-
-  padding: 10px 5px;
-  transition: bottom 300ms;
 }
+
 .Login__label {
   display: block;
 }
+
 .Login__note {
   font-size: 10px;
   margin: 0;
 }
-.Login__submit {
 
-}
-.Login__error {
-  padding: 5px;
-}
-.Login__error-form {
-  font-size: 20px;
-  margin: 20px;
-  color: red;
+.Login__submit {
+  
 }
 .Login__success {
   padding: 5px;
 }
 
+.Login__success-form {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 /* ================================================
   Modifiers
 ================================================ */
-
 .Login--is-errored {
   
 }
